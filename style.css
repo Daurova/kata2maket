@@ -1,0 +1,182 @@
+.left-container{
+    min-width: 320px;
+    background-color: white;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    box-shadow: 5px 0 20px grey;
+}
+@font-face {
+    font-family: "TTLakes";
+    src: local("./TTLakes"),
+        local("./TTLakes"),
+        url("./TTLakes/TTLakes-Medium.woff") format("woff"),
+        url("./TTLakes/TTLakes-Medium.ttf") format("ttf");
+    font-weight: normal;
+}
+body{
+    font-family: TTLakes;
+}
+.left-container{
+    font-family: TTLakes;
+    background-color: #F8F8F8;
+}
+.menu__left--button--logo {
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: transparent;
+    background-image: url(img/Grouplogo.svg);
+    width: 97px;
+    height: 51px;
+    border:none;
+    margin: 10px;
+
+}
+.menu__left--button--cross {
+    background-image: url(img/cross.svg);
+    background-color: #FF3E79;
+    width: 40px;
+    height: 40px;
+    background-size: 18px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 15px;
+
+}
+.menu__right--button--search {
+    background-image: url(img/search.svg);
+    background-color: #FF3E79;
+    width: 40px;
+    height: 40px;
+    background-size: 18px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 15px;
+
+}
+.menu__bottom--button--tel {
+    background-image: url(./img/call.svg);
+    background-color: #FF3E79;
+    width: 40px;
+    height: 40px;
+    background-size: 18px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 10px;
+
+}
+.menu__bottom--button--chat {
+    background-image: url(./img/chat.svg);
+    background-color: #FF3E79;
+    width: 40px;
+    height: 40px;
+    background-size: 18px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 10px;
+
+}
+.menu__bottom--button--profile {
+    background-image: url(./img/profile.svg);
+    background-color: #FF3E79;
+    width: 40px;
+    height: 40px;
+    background-size: 18px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 10px;
+}
+button[class*="button"]{
+    transition: filter 500ms linear 50ms; 
+}
+button[class*="button"]:hover{
+    filter:sepia(100%)
+
+
+}
+
+.services-nav__list{
+    list-style-type: none;
+    padding: 0;
+}
+.services-nav__link, .services-nav__link--repair {
+    border: none;
+    background-color: transparent;
+    text-decoration: none;
+    color: black;
+    line-height: 3em;
+    padding-left: 15px;
+
+}
+
+.services-nav__link:hover {
+    border: 3px solid #B8FFEC;
+    cursor: pointer;
+}
+
+.menu{
+    position: relative;
+    top:0;
+    right:0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu__left{
+    display: flex;
+    align-items: center;
+}
+.menu__right{
+    display: flex;
+    align-items: center;
+}
+.menu-foot{
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 40px;
+   }
+.services-nav__link:focus{
+    border-left: 4px solid #41F6D7;
+    color: grey;
+}    
+.menu-foot__bottom{
+    display: flex;
+    
+}
+.menu-foot__mail , .menu-foot__tel , .menu-foot__lang{
+    margin-left: 15px;
+    margin-top: 1em;
+    text-decoration: none;
+}
+.menu-foot__lang:hover{
+    cursor: pointer;
+    }
+.menu-foot__lang a, .menu-foot__tel a, .menu-foot__mail a{
+        text-decoration: none;
+        color: black;
+    }  
+.menu-foot__lang a:focus{
+        color: #7E7E82;
+        cursor: pointer;
+    } 
+.menu-foot__tel{
+    font-weight: bold;
+}
+ 
+
+
