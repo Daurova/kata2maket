@@ -5,6 +5,11 @@
     top: 0px;
     bottom: 0px;
     box-shadow: 5px 0 20px grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 670px;
+    
 }
 @font-face {
     font-family: "TTLakes";
